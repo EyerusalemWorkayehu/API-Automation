@@ -1,0 +1,12 @@
+|Created Employee: Employee{id=569, first_name='Reagan', last_name='Ramsey', email='reaganramsey@yahoo.com', gender=Female}
+Request method:	GET
+ERequest URI:	https://iwork-employee-api.herokuapp.com/employees/569
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>

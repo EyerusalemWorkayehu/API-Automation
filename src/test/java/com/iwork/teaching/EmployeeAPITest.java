@@ -62,8 +62,8 @@ public class EmployeeAPITest {
         System.out.println("Created Employee: " + temp);
     }
 
-    @Test(dependsOnMethods = { "createEmployeeTest" })
-    public void getEmployeeTest() {
+   // @Test(dependsOnMethods = { "createEmployeeTest" })
+    //public void getEmployeeTest() {
         // Build the post request to fetch an employee
         Response response = given().log().all()
                 // send the request and extract response data

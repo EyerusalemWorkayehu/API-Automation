@@ -70,7 +70,7 @@ public class EmployeeAPITest {
                 .when().get(ROOT_URL+ temp.getId()).then().extract().response();
 
         // Check success status code
-        assertEquals(201, response.getStatusCode());
+        assertEquals(200, response.getStatusCode());
 
         // construct the employee in the response
         Employee received = new Employee(
@@ -97,7 +97,7 @@ public class EmployeeAPITest {
                 // send the request and extract response data
                 .when().patch(ROOT_URL + temp.getId()).then().extract().response();
         // Check the content created status code
-        assertEquals(203, response.getStatusCode());
+        assertEquals(201, response.getStatusCode());
 
         // construct the employee in the response
         Employee received = new Employee(

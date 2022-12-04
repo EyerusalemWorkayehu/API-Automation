@@ -1,0 +1,12 @@
+wCreated Employee: Employee{id=14, first_name='Xavier', last_name='Carey', email='xaviercarey@yahoo.com', gender=Male}
+Request method:	GET
+ERequest URI:	https://iwork-employee-api.up.railway.app/employees/14
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.iwork.teaching.EmployeeAPITest" tests="4" skipped="3" failures="1" errors="0" timestamp="2022-12-03T08:54:52" hostname="IWORKTECHNOLOGI" time="7.274">
+<testsuite name="com.iwork.teaching.EmployeeAPITest" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-12-04T11:44:26" hostname="IWORKTECHNOLOGI" time="18.128">
   <properties/>
-  <testcase name="createEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="7.243">
-    <failure message="java.lang.AssertionError: expected [503] but found [201]" type="java.lang.AssertionError">java.lang.AssertionError: expected [503] but found [201]
+  <testcase name="createEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="9.633"/>
+  <testcase name="getEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="3.768"/>
+  <testcase name="editEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="1.227"/>
+  <testcase name="deleteEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="3.482">
+    <failure message="java.lang.AssertionError: expected [204] but found [205]" type="java.lang.AssertionError">java.lang.AssertionError: expected [204] but found [205]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at org.testng.Assert.assertEquals(Assert.java:1274)
-	at com.iwork.teaching.EmployeeAPITest.createEmployeeTest(EmployeeAPITest.java:47)
+	at com.iwork.teaching.EmployeeAPITest.deleteEmployeeTest(EmployeeAPITest.java:125)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,15 +61,18 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="getEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="editEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="deleteEmployeeTest" classname="com.iwork.teaching.EmployeeAPITest" time="0.0">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[Created Employee: Employee{id=14, first_name='Xavier', last_name='Carey', email='xaviercarey@yahoo.com', gender=Male}
+Request method:	GET
+Request URI:	https://iwork-employee-api.up.railway.app/employees/14
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

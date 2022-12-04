@@ -34,12 +34,6 @@ public class Employee {
         this.email = email;
     }
 
-
-
-
-
-
-
     public void setGender(Gender gender) {
         this.gender = gender;
     }

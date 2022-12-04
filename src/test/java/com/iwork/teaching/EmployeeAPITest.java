@@ -20,7 +20,7 @@ public class EmployeeAPITest {
     private static Gson gson = builder.create();
 
     // Root URL for the API
-    static final String ROOT_URL = "https://iwork-employee-api.herokuapp.com/employees/";
+    static final String ROOT_URL = "https://iwork-employee-api.up.railway.app/employees";
 
     // Generated random user
     private static Employee temp = null;
@@ -83,7 +83,7 @@ public class EmployeeAPITest {
         assertEmployee(temp, received);
     }
 
-    @Test(dependsOnMethods = { "getEmployeeTest" })
+   @Test(dependsOnMethods = { "getEmployeeTest" })
     public void editEmployeeTest() {
         Map<String, String> tempObject = new HashMap<>();
         tempObject.put("first_name", "" + temp.getId() + temp.getFirst_name());
@@ -96,7 +96,6 @@ public class EmployeeAPITest {
                 .body(gson.toJson(tempObject))
                 // send the request and extract response data
                 .when().patch(ROOT_URL + temp.getId()).then().extract().response();
-
         // Check the content created status code
         assertEquals(200, response.getStatusCode());
 

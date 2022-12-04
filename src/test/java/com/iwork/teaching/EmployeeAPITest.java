@@ -122,7 +122,7 @@ public class EmployeeAPITest {
                 .when().delete(ROOT_URL + temp.getId()).then().extract().response();
 
         // Check success status code
-        assertEquals(205, response.getStatusCode());
+        assertEquals(204, response.getStatusCode());
     }
 
     private void assertEmployee(Employee expected, Employee given) {
